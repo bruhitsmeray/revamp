@@ -19,8 +19,8 @@
 .row{
     display: flex;
     margin: 300px 0;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
 }
 
 .col-1{

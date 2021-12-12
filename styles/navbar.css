@@ -1,3 +1,14 @@
+.logo{    
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
 .navbar{
     width: 100%;
     margin: 30px 0;
@@ -6,39 +17,54 @@
     align-items: center;
 }
 
-.logo{    
-    color: #fff;
-    font-weight: 700;
-    font-size: 24px;
-    letter-spacing: 2px;
+.last {
+    border: 2px solid orangered;
+    border-radius: 10px;
+}
 
-    cursor: pointer;
-    text-decoration: none;
-    text-transform: lowercase;
+.last:hover{
+    background: orangered;
+    color: #333;
+}
+
+.message{
+    color: white;
+    background:orangered;
+    border-radius: 5px;
+
+    padding: 10px;
+    text-align: center;
+}
+
+.message h3{
+    background: orangered;
 }
 
 nav{
     flex: 1;
+    font-weight: 700;
+
     text-align: right;
+    text-transform: uppercase;
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
 
-    margin-right: 30px;
+    margin-left: 30px;
 } 
 
 nav ul li a{
     color: #fff;
-    padding: 10px 15px;
-    border-radius: 10px;
+    font-size: 20px;
 
-    font-size: 14px;
+    padding: 15px 20px;
     text-decoration: none;
 }
 
-nav ul li a:hover, .active{
-    color: #fff;
-    background: purple;
+nav ul li a:hover{
+    background: orangered;
+    border-radius: 10px;
+    color: #333;
 }

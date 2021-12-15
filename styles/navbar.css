@@ -17,14 +17,17 @@
     align-items: center;
 }
 
-.last {
+.basic:hover{
+    border-bottom: 2px solid orangered;
+}
+
+.special {
     border: 2px solid orangered;
     border-radius: 10px;
 }
 
-.last:hover{
+.special:hover{
     background: orangered;
-    color: #333;
 }
 
 .message{
@@ -61,10 +64,4 @@ nav ul li a{
 
     padding: 15px 20px;
     text-decoration: none;
-}
-
-nav ul li a:hover{
-    background: orangered;
-    border-radius: 10px;
-    color: #333;
 }

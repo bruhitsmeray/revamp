@@ -37,10 +37,17 @@
 
     padding: 10px;
     text-align: center;
+    
 }
 
 .message h3{
     background: orangered;
+}
+
+.message a{
+    background: orangered;
+    color: white;
+    text-decoration: none;
 }
 
 nav{

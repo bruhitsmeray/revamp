@@ -82,17 +82,13 @@
 }
 
 .welcome-text strong{
-    color: #b6b6b6;
-    font-size: 1.2rem;
+    color: white;
+    font-size: 1.4rem;
     font-weight: 500;
     
     letter-spacing: 1px;
     margin: 5px 0px;
     padding: 5px 0px 0px 0px;
-}
-
-.welcome-text .title{
-    color: white
 }
 
 .welcome-text .description{

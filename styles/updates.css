@@ -48,6 +48,13 @@
     border-bottom: 1px solid orangered;
 }
 
+.update-header{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    margin: 10px 0px 50px 0px;
+}
+
 .update-container{
     display: grid;
     grid-gap: 10px;

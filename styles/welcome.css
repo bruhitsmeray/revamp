@@ -46,6 +46,7 @@
 
 .welcome-filter-active{
     border-bottom: 1px solid orangered;
+    padding: 10px;
 }
 
 .welcome-container{

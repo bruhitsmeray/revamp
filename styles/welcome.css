@@ -5,23 +5,6 @@
     padding: 20px 0px;
 }
 
-.welcome-heading{
-    margin: 20px 0px;
-}
-
-.welcome-heading h1{
-    font-size: 3.5rem;
-    line-height: 72px;
-}
-
-.welcome-heading h1 span{
-    background-color: white;
-    border-radius: 10px 0px 10px 0px;
-
-    color: rgba(20, 20, 20, 1);
-    padding: 6px 12px;
-}
-
 .welcome-filter{
     align-items: center;
     color: #78809c;

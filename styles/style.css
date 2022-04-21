@@ -55,7 +55,25 @@ ul{
     font-size: 24px;
     margin: 20px 0 10px;
 }
- i{
-     text-align: center;
-     justify-content: center;
- }
+
+i{
+    text-align: center;
+    justify-content: center;
+}
+
+.heading{
+    margin: 20px 0px;
+}
+
+.heading h1{
+    font-size: 3.5rem;
+    line-height: 72px;
+}
+
+.heading h1 span{
+    background-color: white;
+    border-radius: 10px 0px 10px 0px;
+
+    color: rgba(20, 20, 20, 1);
+    padding: 6px 12px;
+}

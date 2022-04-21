@@ -91,16 +91,6 @@
 }
 
 /*=================================*/
-footer {
-    padding: 40px;
-}
-
-footer p {
-    color: #cacaca;
-    text-align: center;
-}
-
-/*=================================*/
 ::selection{
     background-color: orangered;
     color: rgba(20, 20, 20, 1);

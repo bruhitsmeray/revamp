@@ -78,4 +78,9 @@ nav ul li a{
         font-weight: 0;
         font-size: 0px;
     }
+
+    .navbar{
+        display: block;
+        padding: 10px 4px;
+    }
 }

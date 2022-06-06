@@ -13,4 +13,5 @@ function IfChecked() {
 
 function ToggleDark(){
     document.body.classList.toggle('dark');
+    console.log('Enjoy dark mode!');
 };

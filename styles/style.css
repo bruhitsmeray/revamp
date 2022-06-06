@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    background-color: rgba(20, 20, 20, 1);
     font-family: sans-serif;
 
     margin: 0;
@@ -8,10 +7,18 @@
 }
 
 body{
-    margin: 0px;
-    padding: 0px;
-
+    min-height: 100vh;
     overflow-x: hidden;
+    transition: background 0.2s linear;
+}
+
+body.dark{
+    background-color: rgb(40, 40, 40);
+}
+
+body.dark .heading h1 span{
+    background-color: white;
+    color: rgba(20, 20, 20, 1);
 }
 
 a{
@@ -75,10 +82,10 @@ i{
 }
 
 .heading h1 span{
-    background-color: white;
+    background-color: rgb(40, 40, 40);
     border-radius: 10px 0px 10px 0px;
 
-    color: rgba(20, 20, 20, 1);
+    color: white;
     padding: 6px 12px;
 }
 

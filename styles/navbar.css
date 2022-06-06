@@ -15,6 +15,7 @@
 
     display: flex;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .basic:hover{
@@ -71,6 +72,43 @@ nav ul li a{
 
     padding: 15px 20px;
     text-decoration: none;
+}
+
+.checkbox{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+.checkbox:checked + .label .ball{
+    background-color: orangered;
+    transform: translateX(22px);
+}
+
+.label{
+    align-items: center;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+
+    padding: 10px;
+    position: relative;
+
+    height: 26px;
+    width: 50px;
+}
+
+.ball{
+    background-color: white;
+    border-radius: 10px;
+
+    position: absolute;
+    left: 4px;
+    
+    height: 20px;
+    width: 20px;
+
+    transition: transform 0.2s linear;
 }
 
 @media screen and (min-width: 240px) and (max-width: 960px) and (orientation: portrait){

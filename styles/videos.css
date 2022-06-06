@@ -19,6 +19,10 @@ iframe{
     user-select: none;
 }
 
+body.dark .video-filter li{
+    color: white;
+}
+
 .video-filter li:hover{
     opacity: 0.7;
     transform: all ease 0.1s;
@@ -49,6 +53,10 @@ iframe{
     text-transform: uppercase;
 }
 
+body.dark .video-text .category{
+    color: white;
+}
+
 .video-text strong{
     color: rgb(40, 40, 40);
     font-size: 1.4rem;
@@ -57,15 +65,27 @@ iframe{
     margin: 5px 0px;
 }
 
+body.dark .video-text strong{
+    color: white;
+}
+
 .video-text .description{
     color: #3a3a3a;
     padding: 5px 0px 10px 0px;
+}
+
+body.dark .video-text .description{
+    color: #9f9f9f;
 }
 
 .video-text .posttime{
     color: #3a3a3a;
     font-size: 0.8rem;
     letter-spacing: 1px;
+}
+
+body.dark .video-text .posttime{
+    color: #9f9f9f;
 }
 
 /*=================================*/

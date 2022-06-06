@@ -1,78 +1,56 @@
-.logo{    
-    color: #fff;
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 2px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-    cursor: pointer;
+header li, header a, header button{
+    color: rgb(40, 40, 40);
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+
     text-decoration: none;
-    text-transform: lowercase;
 }
 
-.navbar{
-    width: 100%;
-    margin: 30px 0;
-
-    display: flex;
+header{
     align-items: center;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 0% 26px 0;
 }
 
-.basic:hover{
-    border-bottom: 2px solid orangered;
-}
-
-.special {
-    border: 2px solid orangered;
-    border-radius: 10px;
-}
-
-.special:hover{
-    background: orangered;
-}
-
-.message{
+body.dark header li,
+body.dark header a,
+body.dark header button{
     color: white;
-    background:orangered;
-    border-radius: 5px;
-
-    padding: 10px;
-    text-align: center;
-    
 }
 
-.message h3{
-    background: orangered;
+.logo{
+    cursor: pointer;
 }
 
-.message a{
-    background: orangered;
-    color: white;
-    text-decoration: none;
-}
-
-nav{
-    flex: 1;
-    font-weight: 700;
-
-    text-align: right;
+.nav-links{
+    list-style: none;
     text-transform: uppercase;
 }
 
-nav ul li{
+.nav-links li{
     display: inline-block;
-    list-style: none;
-
-    margin-left: 30px;
-} 
-
-nav ul li a{
-    color: #fff;
-    font-size: 20px;
-
-    padding: 15px 20px;
-    text-decoration: none;
+    padding: 0px 20px;
 }
+
+.nav-links li{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: orangered;
+}
+
+/* NOTE: This is where the dark mode button code section starts. */
 
 .checkbox{
     display: none;
@@ -80,22 +58,31 @@ nav ul li a{
     -webkit-appearance: none;
 }
 
+.checkbox:checked + .label{
+    background-color: white;
+}
+
 .checkbox:checked + .label .ball{
-    background-color: orangered;
-    transform: translateX(22px);
+    background-color: rgb(40, 40, 40);
+    transform: translateX(32px);
 }
 
 .label{
     align-items: center;
-    background-color: black;
-    border-radius: 20px;
-    display: flex;
+    background-color: rgb(40, 40, 40);
 
-    padding: 10px;
+    border: none;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    display: flex;
     position: relative;
 
-    height: 26px;
-    width: 50px;
+    height: 30px;
+    width: 60px;
+
+    transition: all 0.3 ease 0s;
 }
 
 .ball{
@@ -111,14 +98,30 @@ nav ul li a{
     transition: transform 0.2s linear;
 }
 
-@media screen and (min-width: 240px) and (max-width: 960px) and (orientation: portrait){
-    .logo{
-        font-weight: 0;
-        font-size: 0px;
-    }
+/* NOTE: This is where the dark mode button code section end. */
 
-    .navbar{
-        display: block;
-        padding: 10px 4px;
-    }
+
+/* NOTE: This section is reserved for the message code. */
+
+.message{
+    color: white;
+    background:orangered;
+    border-radius: 10px;
+
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    
 }
+
+.message h3{
+    background: orangered;
+}
+
+.message a{
+    background: orangered;
+    color: white;
+    text-decoration: none;
+}
+
+/* This is where the message code section ends. */

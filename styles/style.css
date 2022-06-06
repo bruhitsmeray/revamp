@@ -97,7 +97,12 @@ footer {
     padding: 40px;
 }
 
-footer p {
+footer p{
+    color: rgb(40, 40, 40);
+    text-align: center;
+}
+
+body.dark footer p {
     color: #cacaca;
     text-align: center;
 }

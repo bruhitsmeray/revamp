@@ -13,7 +13,7 @@
 }
 
 .update-filter li{
-    color: white;
+    color: rgb(40, 40, 40);
     cursor: pointer;
 
     letter-spacing: 2px;
@@ -29,6 +29,7 @@
 
 .update-filter-active{
     border-bottom: 1px solid orangered;
+    padding: 10px;
 }
 
 .update-header{
@@ -66,14 +67,14 @@
 }
 
 .update-text .category{
-    color: white;
+    color: rgb(40, 40, 40);
     font-size: 0.8rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .update-text strong{
-    color: white;
+    color: rgb(40, 40, 40);
     font-size: 1.4rem;
     font-weight: 500;
     letter-spacing: 0.7px;
@@ -81,12 +82,12 @@
 }
 
 .update-text .description{
-    color: #9f9f9f;
+    color: #3a3a3a;
     padding: 5px 0px 10px 0px;
 }
 
 .update-text .posttime{
-    color: #9f9f9f;
+    color: #3a3a3a;
     font-size: 0.8rem;
     letter-spacing: 1px;
 }

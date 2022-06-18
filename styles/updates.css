@@ -120,7 +120,12 @@ body.dark .update-text .posttime{
 /*=================================*/
 
 ::selection{
-    background-color: orangered;
+    background-color: black;
+    color: rgba(220, 220, 220, 1);
+}
+
+body.dark ::selection{
+    background-color: white;
     color: rgba(20, 20, 20, 1);
 }
 

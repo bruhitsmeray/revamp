@@ -1,86 +1,258 @@
-*{
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
 
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    min-height: 100vh;
-    overflow-x: hidden;
-    transition: background 0.2s linear;
+iframe {
+  border-radius: 10px;
+  padding: 10px 0px;
 }
 
-body.dark{
-    background-color: rgb(40, 40, 40);
+:root {
+  --bg-color: #fff;
+  --border-color: rgba(50, 50, 50, 0.4);
+  --font-color: #424242;
+
+  --heading-color: #f4f5ff;
+
+  --primary-color: #e07a00;
+  --secondary-color: #955100;
 }
 
-body.dark .heading h1 span{
-    background-color: white;
-    color: rgba(20, 20, 20, 1);
+[data-theme="dark"] {
+  --bg-color: #282828;
+  --border-color: rgba(244, 245, 255, 0.4);
+  --font-color: #e1e1ff;
+
+  --heading-color: #333;
+
+  --primary-color: #fbab4d;
+  --secondary-color: #fdcf99;
 }
 
-a{
-    text-decoration: none;
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background 0.2s linear;
 }
 
-ul{
-    list-style: none;
+a {
+  text-decoration: none;
 }
 
-.container{
-    padding-left: 8%;
-    padding-right: 8%;
+i {
+  text-align: center;
+  justify-content: center;
 }
 
-.row{
-    display: flex;
-    margin: 300px 0;
-    text-align: center;
-    justify-content: center;
+ul {
+  list-style: none;
 }
 
-.col-1{
-    color: #fff;
-    position: relative;
-    margin-left: 50px;
-    flex-basis: 40%;
+.container {
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
-.col-1 h2{
-    font-size: 48px;
+.row {
+  display: flex;
+  margin: 300px 0;
+  text-align: center;
+  justify-content: center;
 }
 
-.col-1 h3{
-    font-size: 24px;
-    margin: 20px 0 10px;
+.col-1 {
+  color: #fff;
+  position: relative;
+  margin-left: 50px;
+  flex-basis: 40%;
 }
 
-i{
-    text-align: center;
-    justify-content: center;
+.col-1 h2 {
+  font-size: 48px;
+}
+
+.col-1 h3 {
+  font-size: 24px;
+  margin: 20px 0 10px;
 }
 
 /*=================================*/
-/*=============Heading=============*/
+/*==============Heading============*/
 /*=================================*/
 
-.heading{
-    margin: 20px 0px;
+.heading {
+  margin: 20px 0px;
 }
 
-.heading h1{
-    font-size: 3.5rem;
-    line-height: 72px;
+.heading h1 {
+  font-size: 3.5rem;
+  line-height: 72px;
 }
 
-.heading h1 span{
-    background-color: rgb(40, 40, 40);
-    border-radius: 10px 0px 10px 0px;
+.heading h1 span {
+  background-color: var(--heading-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px 0px 10px 0px;
 
-    color: white;
-    padding: 6px 12px;
+  color: var(--font-color);
+  padding: 6px 12px;
+}
+
+/*=================================*/
+/*==============Elements===========*/
+/*=================================*/
+
+#welcome,
+#updates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+/*=================================*/
+/*==============Filters============*/
+/*=================================*/
+
+.welcome-filter,
+.video-filter,
+.update-filter {
+  align-items: center;
+  color: #78809c;
+  display: flex;
+  margin: 10px 0px 20px 0px;
+}
+
+.welcome-filter li,
+.video-filter li,
+.update-filter li {
+  color: var(--font-color);
+  cursor: pointer;
+
+  letter-spacing: 2px;
+  margin: 0px 5px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.welcome-filter li:hover,
+.video-filter li:hover,
+.update-filter li:hover {
+  opacity: 0.7;
+  transform: all ease 0.1s;
+}
+
+.welcome-filter-active,
+.video-filter-active,
+.update-filter-active {
+  border-bottom: 1px solid var(--primary-color);
+  padding: 10px;
+}
+
+/*=================================*/
+/*===============Boxes=============*/
+/*=================================*/
+
+.welcome-container,
+.video-container,
+.update-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px 0px 50px 0px;
+}
+
+.welcome-box,
+.update-box {
+  background-color: var(--heading-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+
+  padding: 10px 14px;
+  transition: all ease 0.5s;
+}
+
+.welcome-box:hover,
+.update-box:hover {
+  border: 1px solid var(--primary-color);
+  transform: all ease 0.5s;
+}
+
+.welcome-text,
+.videos-text,
+.update-text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 3px;
+}
+
+.welcome-text .category,
+.video-text .category,
+.update-text .category {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.welcome-text .category,
+.video-text .category,
+.update-text .category,
+.welcome-text .description,
+.video-text .description,
+.update-text .description,
+.welcome-text strong,
+.video-text strong,
+.update-text strong {
+  color: var(--font-color);
+}
+
+.welcome-text .category,
+.video-text .category,
+.update-text .category,
+.welcome-text strong,
+.video-text strong,
+.update-text strong {
+  letter-spacing: 2px;
+}
+
+.welcome-text strong,
+.video-text strong,
+.update-text strong {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 5px 0px;
+  padding-top: 5px;
+}
+
+.welcome-text .description,
+.update-text .description {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 5px 0px;
+}
+
+.video-text .description {
+  padding: 5px 0px 10px 0px;
+}
+
+.video-text .posttime,
+.update-text .posttime {
+  color: var(--font-color);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.update-header {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  margin: 10px 0px 30px 0px;
 }
 
 /*=================================*/
@@ -88,15 +260,19 @@ i{
 /*=================================*/
 
 footer {
-    padding: 40px;
+  padding: 40px;
 }
 
-footer p{
-    color: rgb(40, 40, 40);
-    text-align: center;
+footer p {
+  color: var(--font-color);
+  font-size: 14px;
+  text-align: center;
 }
 
-body.dark footer p {
-    color: #cacaca;
-    text-align: center;
+@media screen and (min-width: 240px) and (max-width: 960px) and (orientation: portrait) {
+  .welcome-container,
+  .video-container,
+  .update-container {
+    grid-template-columns: 1fr;
+  }
 }
